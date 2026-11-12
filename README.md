@@ -42,3 +42,15 @@ The database contains product information including product ID, name, category, 
 
 ### Product Not Found
 ![Product Not Found](screenshots/no_product_found.png)
+
+### Reflect
+The program connects to the SQLite database file name `inventory.db`.
+We did not create any tables, the products table already existed in `inventory.db`.
+SQL Commands used: 
+SELECT to display all products and filter low-stock.
+UPDATE to change the product quantity of certain products (chosen by productID).
+WHERE condition in the query for low-stock.
+Prepared statements used for the database operations.
+Most difficult part: JDBC setup to connect to the database.
+Databases store information in an organized structure and can be queried to search/filter/update.
+Text files (in contrast) are stored in plain text, so the program has to read and process the text information.
